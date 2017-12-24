@@ -16,7 +16,7 @@
 		<maven.test.skip>true</maven.test.skip>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
 
-        <jdk.version>1.6</jdk.version>
+        <jdk.version>1.8</jdk.version>
 
 		<spring.version>4.2.1.RELEASE</spring.version>
 		<tomcat.version>7.0.59</tomcat.version>
@@ -60,6 +60,13 @@
         <f.v.asm.version>3.3.1</f.v.asm.version>
 
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
 

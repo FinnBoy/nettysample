@@ -41,15 +41,19 @@ public class SelectorServer {
                     System.out.println("accept from client");
 
                     socketChannel.configureBlocking(false);
-                    socketChannel.register(selector, SelectionKey.OP_READ);
+                    SelectionKey key = socketChannel.register(selector, SelectionKey.OP_READ);
+                    // ?
+                    // key.cancel();
+                    // key.interestOps();
+                    // key.interestOps(SelectionKey.OP_WRITE);
 
                 } else if (selectionKey.isReadable()) {
-
+                    // 有数据来时，才 可读
                     SocketChannel sc = (SocketChannel) selectionKey.channel();
                     read(sc);
 
-                } else {
-
+                } else if (selectionKey.isWritable()) {
+                    // Socket空闲时，即为 可写
                 }
 
                 iterator.remove();

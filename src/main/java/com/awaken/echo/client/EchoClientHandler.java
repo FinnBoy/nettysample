@@ -34,7 +34,7 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg) throws Exception {
         System.out.println("receive data from server!");
-        System.out.println(" ------- Client received:" + msg.toString(CharsetUtil.UTF_8));
+        System.out.println(" ------- Client received: " + msg.toString(CharsetUtil.UTF_8));
     }
 
     /**

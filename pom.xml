@@ -24,7 +24,7 @@
         <!-- # framework version # -->
         <f.v.tomcat.version>7.0.59</f.v.tomcat.version>
         <f.v.tomcat.embed.version>7.0.79</f.v.tomcat.embed.version>
-        <f.v.jetty.version>7.6.21.v20160908</f.v.jetty.version>
+        <f.v.jetty.version>9.2.22.v20170606</f.v.jetty.version><!-- 9.3.22.v20171030 7.6.21.v20160908 -->
 
         <f.v.jdbc.mysql.version>5.1.18</f.v.jdbc.mysql.version>
 
@@ -59,18 +59,44 @@
         <f.v.cglib.version>3.2.5</f.v.cglib.version>
         <f.v.asm.version>3.3.1</f.v.asm.version>
 
+        <f.v.netty.version>4.1.9.Final</f.v.netty.version>
+
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+        </dependency>
+
+        <!--
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-jsp</artifactId>
+        </dependency>
+        -->
+
     </dependencies>
 
     <dependencyManagement>
 
         <dependencies>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${f.v.netty.version}</version>
+            </dependency>
 
             <!-- ~~~~~~~~~~~~~~~~~~~~ Junit ~~~~~~~~~~~~~~~~~~~~ -->
             <dependency>

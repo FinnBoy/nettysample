@@ -75,6 +75,11 @@
             <artifactId>netty-all</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+        </dependency>
+
         <!--
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
@@ -91,6 +96,27 @@
     <dependencyManagement>
 
         <dependencies>
+
+            <!-- Java 8 maven artifact: -->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>2.7.2</version>
+            </dependency>
+
+            <!-- Java 7 and Java 8 maven artifact: -->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP-java7</artifactId>
+                <version>2.4.13</version>
+            </dependency>
+
+            <!-- Java 6 maven artifact: -->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP-java6</artifactId>
+                <version>2.3.13</version>
+            </dependency>
 
             <dependency>
                 <groupId>io.netty</groupId>

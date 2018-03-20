@@ -3,7 +3,7 @@ package com.awaken.domain.product;
 import java.util.Set;
 
 /**
- * Stock Keeping Unit.
+ * Stock Keeping Unit / 品项.
  * <p>
  * 对一种商品而言，当其品牌、型号、配置、等级、花色、包装容量、单位、生产日期、保质期、用途、价格、产地等属性与其他商品存在不同时，
  * 可称为一个单品。
@@ -15,6 +15,6 @@ import java.util.Set;
  * 也就是说同样的产品只要在人们对其进行保存、管理、销售、服务上有不同的方式，那么它（SKU）就不再是相同的了。
  * </p>
  */
-public class Sku {
-    private Component component;
+public abstract class Sku {
+
 }

@@ -1,16 +1,8 @@
 package com.awaken.domain.product;
 
-import java.util.Set;
+/**
+ * 复合品项
+ */
+public class CompositeSku extends Sku {
 
-public class CompositeSku {
-
-    private Set<Component> components;
-
-    public Set<Component> getComponents() {
-        return components;
-    }
-
-    public void setComponents(Set<Component> components) {
-        this.components = components;
-    }
 }

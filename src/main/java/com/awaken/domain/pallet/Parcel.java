@@ -1,4 +1,4 @@
-package com.awaken.domain.inventory;
+package com.awaken.domain.pallet;
 
 /**
  * 包裹

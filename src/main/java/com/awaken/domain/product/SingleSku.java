@@ -1,6 +1,9 @@
 package com.awaken.domain.product;
 
-public class Component {
+/**
+ * 单 Product 品项.
+ */
+public class SingleSku extends Sku {
 
     private Product product;
 

@@ -1,4 +1,4 @@
 package com.awaken.domain.inventory;
 
-public class Cargo {
+public class BatchStock extends Stock {
 }

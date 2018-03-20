@@ -1,7 +1,5 @@
 package com.awaken.domain.product;
 
-import java.util.Set;
-
 /**
  * Stock Keeping Unit / 品项.
  * <p>

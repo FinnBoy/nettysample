@@ -2,7 +2,7 @@ package com.awaken.domain.account;
 
 import java.util.Set;
 
-public class Organization {
+public class Organization extends Owner {
 
     private Set<Principal> principals;
 

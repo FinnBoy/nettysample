@@ -1,7 +1,7 @@
 package com.awaken.domain.warehouse;
 
 /**
- * 货架
+ * 物理划分：货架
  */
 public class Shelf {
 

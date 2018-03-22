@@ -1,7 +1,7 @@
 package com.awaken.domain.warehouse;
 
 /**
- * 库区
+ * 物理划分：库区
  */
 public class Area {
 

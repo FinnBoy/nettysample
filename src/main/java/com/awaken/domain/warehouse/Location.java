@@ -1,7 +1,7 @@
 package com.awaken.domain.warehouse;
 
 /**
- * 仓位
+ * 物理划分：仓位
  */
 public class Location {
 

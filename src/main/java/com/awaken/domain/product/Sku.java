@@ -15,4 +15,42 @@ package com.awaken.domain.product;
  */
 public abstract class Sku {
 
+    /**
+     * 包材
+     */
+    private Product pack;
+
+    /**
+     * 单位
+     */
+    private String quantifier;
+
+    /**
+     * 容量
+     */
+    private Integer quantity;
+
+    public Product getPack() {
+        return pack;
+    }
+
+    public void setPack(Product pack) {
+        this.pack = pack;
+    }
+
+    public String getQuantifier() {
+        return quantifier;
+    }
+
+    public void setQuantifier(String quantifier) {
+        this.quantifier = quantifier;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 }

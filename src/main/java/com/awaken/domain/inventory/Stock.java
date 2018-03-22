@@ -10,18 +10,18 @@ import java.util.Date;
  */
 public abstract class Stock {
 
-    private Cargo cargo;
+    private Date receiptDate;
 
     private Location location;
 
-    private Date receiptDate;
+    private Cargo cargo;
 
-    public Cargo getCargo() {
-        return cargo;
+    public Date getReceiptDate() {
+        return receiptDate;
     }
 
-    public void setCargo(Cargo cargo) {
-        this.cargo = cargo;
+    public void setReceiptDate(Date receiptDate) {
+        this.receiptDate = receiptDate;
     }
 
     public Location getLocation() {
@@ -32,12 +32,11 @@ public abstract class Stock {
         this.location = location;
     }
 
-    public Date getReceiptDate() {
-        return receiptDate;
+    public Cargo getCargo() {
+        return cargo;
     }
 
-    public void setReceiptDate(Date receiptDate) {
-        this.receiptDate = receiptDate;
+    public void setCargo(Cargo cargo) {
+        this.cargo = cargo;
     }
-
 }

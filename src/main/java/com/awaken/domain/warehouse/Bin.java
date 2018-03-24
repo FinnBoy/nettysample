@@ -1,28 +1,28 @@
 package com.awaken.domain.warehouse;
 
-import java.util.Set;
+import com.awaken.domain.holder.Holder;
 
 /**
- * 物理划分：存放架
+ * 物理划分：仓位
  */
-public class Shelf {
+public class Bin extends Holder {
 
     /**
-     * 库位
+     * 仓库
      */
-    private Set<Bin> bins;
+    private Warehouse warehouse;
 
     /**
      * 库房
      */
     private Storeroom storeroom;
 
-    public Set<Bin> getBins() {
-        return bins;
+    public Warehouse getWarehouse() {
+        return warehouse;
     }
 
-    public void setBins(Set<Bin> bins) {
-        this.bins = bins;
+    public void setWarehouse(Warehouse warehouse) {
+        this.warehouse = warehouse;
     }
 
     public Storeroom getStoreroom() {

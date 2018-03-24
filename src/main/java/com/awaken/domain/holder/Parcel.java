@@ -1,9 +1,6 @@
 package com.awaken.domain.holder;
 
-import com.awaken.domain.cargo.Cargo;
 import com.awaken.domain.order.Order;
-
-import java.util.Set;
 
 /**
  * 包裹

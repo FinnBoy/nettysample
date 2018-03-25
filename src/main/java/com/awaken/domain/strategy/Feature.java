@@ -1,4 +1,4 @@
-package com.awaken.domain.common;
+package com.awaken.domain.strategy;
 
 import java.util.Set;
 

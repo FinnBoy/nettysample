@@ -1,4 +1,4 @@
-package com.awaken.domain.common;
+package com.awaken.domain.strategy;
 
 /**
  * 分类

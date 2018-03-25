@@ -23,6 +23,11 @@ public abstract class Cargo {
     private Sku sku;
 
     /**
+     * 数量
+     */
+    private Long quantity;
+
+    /**
      * 状态
      */
     private Integer skuStatus;
@@ -47,6 +52,14 @@ public abstract class Cargo {
 
     public void setSku(Sku sku) {
         this.sku = sku;
+    }
+
+    public Long getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Long quantity) {
+        this.quantity = quantity;
     }
 
     public Integer getSkuStatus() {

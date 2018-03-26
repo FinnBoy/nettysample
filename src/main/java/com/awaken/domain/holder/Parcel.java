@@ -1,6 +1,6 @@
 package com.awaken.domain.holder;
 
-import com.awaken.domain.order.Order;
+import com.awaken.domain.document.Order;
 
 /**
  * 包裹

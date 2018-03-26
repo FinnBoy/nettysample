@@ -8,7 +8,7 @@ import java.util.Set;
 public class Feature {
 
     /**
-     * 分类(warehouse, product, order, etc.)
+     * 分类(warehouse, product, document, etc.)
      */
     private Integer division;
 

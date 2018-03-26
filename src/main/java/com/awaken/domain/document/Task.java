@@ -1,4 +1,4 @@
-package com.awaken.domain.order;
+package com.awaken.domain.document;
 
 /**
  * 任务

@@ -1,11 +1,18 @@
 package com.awaken.domain.warehouse;
 
+import com.awaken.domain.owner.Location;
+
 import java.util.Set;
 
 /**
  * 物理划分：仓库
  */
 public class Warehouse {
+
+    /**
+     * 地点
+     */
+    private Location location;
 
     /**
      * 存放架
@@ -16,6 +23,14 @@ public class Warehouse {
      * 库房
      */
     private Set<Storeroom> storerooms;
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
 
     public Set<Shelf> getShelves() {
         return shelves;

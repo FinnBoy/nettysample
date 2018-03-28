@@ -126,16 +126,6 @@ public class OutboundOrder extends Order implements Document<OutboundOrderItem> 
     private Date eta;
 
     /**
-     * 拣货开始时间
-     */
-    private Date pickingDate;
-
-    /**
-     * 复核完成时间
-     */
-    private Date reviewDate;
-
-    /**
      * 实际发运日期
      */
     private Date departureDate;
@@ -336,22 +326,6 @@ public class OutboundOrder extends Order implements Document<OutboundOrderItem> 
 
     public void setEta(Date eta) {
         this.eta = eta;
-    }
-
-    public Date getPickingDate() {
-        return pickingDate;
-    }
-
-    public void setPickingDate(Date pickingDate) {
-        this.pickingDate = pickingDate;
-    }
-
-    public Date getReviewDate() {
-        return reviewDate;
-    }
-
-    public void setReviewDate(Date reviewDate) {
-        this.reviewDate = reviewDate;
     }
 
     public Date getDepartureDate() {

@@ -21,14 +21,25 @@ import java.util.Set;
  */
 public class OutboundOrder extends Order implements Document<OutboundOrderItem> {
 
+    /**
+     * 仓库所属公司
+     */
     private Company company;
 
+    /**
+     * 仓库
+     */
     private Warehouse warehouse;
 
     /**
-     * 客户地点
+     * 发件方地点
      */
-    private Location customerLocation;
+    private Location addresser;
+
+    /**
+     * 收件方地点
+     */
+    private Location recipient;
 
     /**
      * 承运商
@@ -166,12 +177,20 @@ public class OutboundOrder extends Order implements Document<OutboundOrderItem> 
         this.warehouse = warehouse;
     }
 
-    public Location getCustomerLocation() {
-        return customerLocation;
+    public Location getAddresser() {
+        return addresser;
     }
 
-    public void setCustomerLocation(Location customerLocation) {
-        this.customerLocation = customerLocation;
+    public void setAddresser(Location addresser) {
+        this.addresser = addresser;
+    }
+
+    public Location getRecipient() {
+        return recipient;
+    }
+
+    public void setRecipient(Location recipient) {
+        this.recipient = recipient;
     }
 
     public Carrier getCarrier() {

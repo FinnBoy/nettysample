@@ -19,7 +19,7 @@ import java.util.Set;
  * 库位移动上架
  * </p>
  */
-public class PutawayPlan extends Plan<PutawayPlanItem> {
+public class PutawayPlan extends Plan {
 
     /**
      * 清单

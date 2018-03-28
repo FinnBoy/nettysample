@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * 波次计划
  */
-public class WavePlan extends Plan<WavePlanItem> {
+public class WavePlan extends Plan {
 
     /**
      * 出库单

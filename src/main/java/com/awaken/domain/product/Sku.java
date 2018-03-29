@@ -12,6 +12,7 @@ package com.awaken.domain.product;
  * 同样的产品放到亚洲和美洲就不一样了？
  * 也就是说同样的产品只要在人们对其进行保存、管理、销售、服务上有不同的方式，那么它（SKU）就不再是相同的了。
  * </p>
+ * <p>例：A公司/A企业/A店铺卖的iPhone7，库存有玫瑰金色64G、黑色128G两种Sku</p>
  */
 public abstract class Sku {
 

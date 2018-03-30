@@ -1,6 +1,6 @@
 package com.awaken.domain.warehouse;
 
-import com.awaken.domain.owner.Location;
+import com.awaken.domain.community.Location;
 
 import java.util.Set;
 

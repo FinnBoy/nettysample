@@ -2,8 +2,8 @@ package com.awaken.domain.document.order;
 
 import com.awaken.domain.document.Document;
 import com.awaken.domain.document.Order;
-import com.awaken.domain.owner.Carrier;
-import com.awaken.domain.owner.Location;
+import com.awaken.domain.community.Carrier;
+import com.awaken.domain.community.Location;
 import com.awaken.domain.warehouse.Warehouse;
 
 import java.math.BigDecimal;

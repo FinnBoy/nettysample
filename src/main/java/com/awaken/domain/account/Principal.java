@@ -6,7 +6,7 @@ public class Principal extends Owner {
 
     private Organization organization;
 
-    private Set<Organization> organizations;
+    private Set<Organization> adjunctOrganizations;
 
     private Set<Group> groups;
 
@@ -18,12 +18,12 @@ public class Principal extends Owner {
         this.organization = organization;
     }
 
-    public Set<Organization> getOrganizations() {
-        return organizations;
+    public Set<Organization> getAdjunctOrganizations() {
+        return adjunctOrganizations;
     }
 
-    public void setOrganizations(Set<Organization> organizations) {
-        this.organizations = organizations;
+    public void setAdjunctOrganizations(Set<Organization> adjunctOrganizations) {
+        this.adjunctOrganizations = adjunctOrganizations;
     }
 
     public Set<Group> getGroups() {

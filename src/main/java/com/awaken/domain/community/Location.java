@@ -1,4 +1,4 @@
-package com.awaken.domain.owner;
+package com.awaken.domain.community;
 
 /**
  * 地点

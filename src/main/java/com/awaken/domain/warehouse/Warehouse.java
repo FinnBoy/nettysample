@@ -1,5 +1,6 @@
 package com.awaken.domain.warehouse;
 
+import com.awaken.domain.community.Company;
 import com.awaken.domain.community.Location;
 
 import java.util.Set;
@@ -8,6 +9,8 @@ import java.util.Set;
  * 物理划分：仓库
  */
 public class Warehouse {
+
+    private Company company;
 
     /**
      * 地点
@@ -23,6 +26,14 @@ public class Warehouse {
      * 库房
      */
     private Set<Storeroom> storerooms;
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 
     public Location getLocation() {
         return location;

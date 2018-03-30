@@ -3,7 +3,6 @@ package com.awaken.domain.document.order;
 import com.awaken.domain.document.Document;
 import com.awaken.domain.document.Order;
 import com.awaken.domain.owner.Carrier;
-import com.awaken.domain.owner.Company;
 import com.awaken.domain.owner.Location;
 import com.awaken.domain.warehouse.Warehouse;
 
@@ -20,11 +19,6 @@ import java.util.Set;
  * </p>
  */
 public class OutboundOrder extends Order implements Document<OutboundOrderItem> {
-
-    /**
-     * 仓库所属公司
-     */
-    private Company company;
 
     /**
      * 仓库
@@ -160,14 +154,6 @@ public class OutboundOrder extends Order implements Document<OutboundOrderItem> 
      * 备注
      */
     private String description;
-
-    public Company getCompany() {
-        return company;
-    }
-
-    public void setCompany(Company company) {
-        this.company = company;
-    }
 
     public Warehouse getWarehouse() {
         return warehouse;

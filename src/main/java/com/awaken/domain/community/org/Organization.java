@@ -4,34 +4,13 @@ import com.awaken.domain.community.Location;
 
 import java.util.Set;
 
-/**
- * 组织
- */
-public abstract class Organization {
+public interface Organization {
 
-    /**
-     * 类型
-     */
-    private Integer form;
+    Integer getForm();
 
-    /**
-     * 地点
-     */
-    private Set<Location> locations;
+    void setForm(Integer form);
 
-    public Integer getForm() {
-        return form;
-    }
+    Set<Location> getLocations();
 
-    public void setForm(Integer form) {
-        this.form = form;
-    }
-
-    public Set<Location> getLocations() {
-        return locations;
-    }
-
-    public void setLocations(Set<Location> locations) {
-        this.locations = locations;
-    }
+    void setLocations(Set<Location> locations);
 }

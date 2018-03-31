@@ -5,7 +5,7 @@ import com.awaken.domain.account.Principal;
 /**
  * Self-employed people
  */
-public class Soho extends Organization {
+public class Soho extends AbstractOrganization {
 
     private Principal principal;
 

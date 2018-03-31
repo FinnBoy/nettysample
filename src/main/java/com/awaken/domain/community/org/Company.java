@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * 公司，企业
  */
-public class Company extends Organization {
+public class Company extends AbstractOrganization {
 
     private Set<Warehouse> warehouses;
 

@@ -1,6 +1,6 @@
 package com.awaken.domain.product;
 
-import com.awaken.domain.community.Company;
+import com.awaken.domain.community.org.Organization;
 
 import java.util.Set;
 
@@ -10,16 +10,16 @@ import java.util.Set;
  */
 public class Product {
 
-    private Company company;
+    private Organization organization;
 
     private Set<Sku> skus;
 
-    public Company getCompany() {
-        return company;
+    public Organization getOrganization() {
+        return organization;
     }
 
-    public void setCompany(Company company) {
-        this.company = company;
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
     }
 
     public Set<Sku> getSkus() {

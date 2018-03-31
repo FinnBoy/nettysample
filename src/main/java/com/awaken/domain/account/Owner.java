@@ -1,23 +1,23 @@
 package com.awaken.domain.account;
 
-import com.awaken.domain.community.Company;
+import com.awaken.domain.community.org.Organization;
 
 import java.util.Set;
 
 public abstract class Owner {
 
-    private Company company;
+    private Organization organization;
 
     private Set<Role> roles;
 
     private Level level;
 
-    public Company getCompany() {
-        return company;
+    public Organization getOrganization() {
+        return organization;
     }
 
-    public void setCompany(Company company) {
-        this.company = company;
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
     }
 
     public Set<Role> getRoles() {

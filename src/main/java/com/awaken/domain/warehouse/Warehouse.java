@@ -1,7 +1,7 @@
 package com.awaken.domain.warehouse;
 
-import com.awaken.domain.community.Company;
 import com.awaken.domain.community.Location;
+import com.awaken.domain.community.org.Organization;
 
 import java.util.Set;
 
@@ -10,7 +10,10 @@ import java.util.Set;
  */
 public class Warehouse {
 
-    private Company company;
+    /**
+     * 组织
+     */
+    private Organization organization;
 
     /**
      * 地点
@@ -27,12 +30,12 @@ public class Warehouse {
      */
     private Set<Storeroom> storerooms;
 
-    public Company getCompany() {
-        return company;
+    public Organization getOrganization() {
+        return organization;
     }
 
-    public void setCompany(Company company) {
-        this.company = company;
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
     }
 
     public Location getLocation() {

@@ -5,13 +5,4 @@ package com.awaken.domain.community;
  */
 public class Location {
 
-    private Company company;
-
-    public Company getCompany() {
-        return company;
-    }
-
-    public void setCompany(Company company) {
-        this.company = company;
-    }
 }

@@ -1,9 +1,8 @@
 package com.awaken.domain.document.order;
 
+import com.awaken.domain.community.trade.Trader;
 import com.awaken.domain.document.Document;
 import com.awaken.domain.document.Order;
-import com.awaken.domain.community.Carrier;
-import com.awaken.domain.community.Location;
 import com.awaken.domain.warehouse.Warehouse;
 
 import java.math.BigDecimal;
@@ -26,19 +25,19 @@ public class OutboundOrder extends Order implements Document<OutboundOrderItem> 
     private Warehouse warehouse;
 
     /**
-     * 发件方地点
+     * 发件方
      */
-    private Location addresser;
+    private Trader addresser;
 
     /**
-     * 收件方地点
+     * 收件方
      */
-    private Location recipient;
+    private Trader recipient;
 
     /**
      * 承运商
      */
-    private Carrier carrier;
+    private Trader carrier;
 
     /**
      * 订单优先级别
@@ -163,27 +162,27 @@ public class OutboundOrder extends Order implements Document<OutboundOrderItem> 
         this.warehouse = warehouse;
     }
 
-    public Location getAddresser() {
+    public Trader getAddresser() {
         return addresser;
     }
 
-    public void setAddresser(Location addresser) {
+    public void setAddresser(Trader addresser) {
         this.addresser = addresser;
     }
 
-    public Location getRecipient() {
+    public Trader getRecipient() {
         return recipient;
     }
 
-    public void setRecipient(Location recipient) {
+    public void setRecipient(Trader recipient) {
         this.recipient = recipient;
     }
 
-    public Carrier getCarrier() {
+    public Trader getCarrier() {
         return carrier;
     }
 
-    public void setCarrier(Carrier carrier) {
+    public void setCarrier(Trader carrier) {
         this.carrier = carrier;
     }
 

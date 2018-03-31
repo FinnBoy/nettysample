@@ -2,13 +2,13 @@ package com.awaken.domain.account;
 
 import java.util.Set;
 
-public class Organization extends Owner {
+public class Department extends Owner {
 
     private Set<Principal> principals;
 
-    private Set<Organization> subordinates;
+    private Set<Department> subordinates;
 
-    private Organization superior;
+    private Department superior;
 
     public Set<Principal> getPrincipals() {
         return principals;
@@ -18,19 +18,19 @@ public class Organization extends Owner {
         this.principals = principals;
     }
 
-    public Set<Organization> getSubordinates() {
+    public Set<Department> getSubordinates() {
         return subordinates;
     }
 
-    public void setSubordinates(Set<Organization> subordinates) {
+    public void setSubordinates(Set<Department> subordinates) {
         this.subordinates = subordinates;
     }
 
-    public Organization getSuperior() {
+    public Department getSuperior() {
         return superior;
     }
 
-    public void setSuperior(Organization superior) {
+    public void setSuperior(Department superior) {
         this.superior = superior;
     }
 }

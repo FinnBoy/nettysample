@@ -4,26 +4,26 @@ import java.util.Set;
 
 public class Principal extends Owner {
 
-    private Organization organization;
+    private Department department;
 
-    private Set<Organization> adjunctOrganizations;
+    private Set<Department> adjunctDepts;
 
     private Set<Group> groups;
 
-    public Organization getOrganization() {
-        return organization;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setOrganization(Organization organization) {
-        this.organization = organization;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
-    public Set<Organization> getAdjunctOrganizations() {
-        return adjunctOrganizations;
+    public Set<Department> getAdjunctDepts() {
+        return adjunctDepts;
     }
 
-    public void setAdjunctOrganizations(Set<Organization> adjunctOrganizations) {
-        this.adjunctOrganizations = adjunctOrganizations;
+    public void setAdjunctDepts(Set<Department> adjunctDepts) {
+        this.adjunctDepts = adjunctDepts;
     }
 
     public Set<Group> getGroups() {

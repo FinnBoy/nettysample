@@ -3,7 +3,7 @@ package com.awaken.domain.account;
 public class Level {
 
     /**
-     * Group, Organization, Principal.
+     * Groups, Departments, Principals.
      */
     private Integer partition;
 

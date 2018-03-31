@@ -1,6 +1,9 @@
 package com.awaken.domain.product;
 
-public enum Material {
+/**
+ * 生产环节物料类型
+ */
+public enum ProcessMaterial {
     /**
      * 原材料
      */

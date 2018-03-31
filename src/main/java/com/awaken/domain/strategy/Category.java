@@ -6,7 +6,27 @@ package com.awaken.domain.strategy;
 public class Category {
 
     /**
+     * 上级分类
+     * <p>
+     * when {@link Division} is Product or Warehouse, this value will be not empty.
+     * </p>
+     */
+    private Category superior;
+
+    /**
+     * 大划分
+     *
+     * @see Division
+     */
+    private Integer division;
+
+    /**
      * 分类
+     * <p>
+     * when {@link Division} is Product or Warehouse, can choose {@link Scale} as sort value.
+     * </p>
+     *
+     * @see Scale
      */
     private Integer sort;
 
@@ -29,6 +49,22 @@ public class Category {
      * 项名
      */
     private String name;
+
+    public Category getSuperior() {
+        return superior;
+    }
+
+    public void setSuperior(Category superior) {
+        this.superior = superior;
+    }
+
+    public Integer getDivision() {
+        return division;
+    }
+
+    public void setDivision(Integer division) {
+        this.division = division;
+    }
 
     public Integer getSort() {
         return sort;

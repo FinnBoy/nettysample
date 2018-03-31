@@ -2,12 +2,24 @@ package com.awaken.domain.account;
 
 import java.util.Set;
 
+/**
+ * 部门
+ */
 public class Department extends Owner {
 
+    /**
+     * 人员
+     */
     private Set<Principal> principals;
 
+    /**
+     * 下级部门
+     */
     private Set<Department> subordinates;
 
+    /**
+     * 上级部门
+     */
     private Department superior;
 
     public Set<Principal> getPrincipals() {

@@ -2,6 +2,9 @@ package com.awaken.domain.account;
 
 import java.util.Set;
 
+/**
+ * 当事人
+ */
 public class Principal extends Owner {
 
     private Department department;

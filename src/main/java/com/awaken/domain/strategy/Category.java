@@ -1,108 +1,70 @@
 package com.awaken.domain.strategy;
 
 /**
- * 分类
+ * 类别
  */
-public class Category {
+public interface Category {
 
     /**
-     * 上级分类
-     * <p>
-     * when {@link Division} is Product or Warehouse, this value will be not empty.
-     * </p>
-     */
-    private Category superior;
-
-    /**
-     * 大划分
+     * get superior scale code
      *
-     * @see Division
+     * @return superior
      */
-    private Integer division;
+    Category getSuperior();
 
     /**
-     * 分类
-     * <p>
-     * when {@link Division} is Product or Warehouse, can choose {@link Scale} as sort value.
-     * </p>
+     * set superior scale code
      *
-     * @see Scale
+     * @param superior
      */
-    private Integer sort;
+    void setSuperior(Category superior);
 
     /**
-     * 分类描述
+     * get 类别
+     *
+     * @return division
      */
-    private String description;
+    Integer getDivision();
 
     /**
-     * 可作为特性使用
+     * set 类别
+     *
+     * @param division
      */
-    private Boolean featured;
+    void setDivision(Integer division);
 
     /**
-     * 分类项
+     * get 规模等级
+     *
+     * @return
      */
-    private Integer item;
+    Integer getScale();
 
     /**
-     * 项名
+     * set 规模等级
+     *
+     * @param scale
      */
-    private String name;
+    void setScale(Integer scale);
 
-    public Category getSuperior() {
-        return superior;
-    }
+    /**
+     * get code number
+     *
+     * @return code number
+     */
+    Integer getCode();
 
-    public void setSuperior(Category superior) {
-        this.superior = superior;
-    }
+    /**
+     * set code number
+     *
+     * @param code
+     */
+    void setCode(Integer code);
 
-    public Integer getDivision() {
-        return division;
-    }
-
-    public void setDivision(Integer division) {
-        this.division = division;
-    }
-
-    public Integer getSort() {
-        return sort;
-    }
-
-    public void setSort(Integer sort) {
-        this.sort = sort;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Boolean getFeatured() {
-        return featured;
-    }
-
-    public void setFeatured(Boolean featured) {
-        this.featured = featured;
-    }
-
-    public Integer getItem() {
-        return item;
-    }
-
-    public void setItem(Integer item) {
-        this.item = item;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    /**
+     * whether set as feature.
+     *
+     * @return
+     */
+    Boolean isFeature();
 }

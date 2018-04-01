@@ -5,96 +5,68 @@ import java.util.Set;
 /**
  * 特性
  */
-public class Feature {
+public interface Feature {
 
     /**
-     * 分类(warehouse, product, document, etc.)
+     * get 包含特性
+     *
+     * @return
      */
-    private Integer division;
+    Set<Feature> getInclusions();
 
     /**
-     * 分类描述
+     * set 包含特性
+     *
+     * @param inclusions
      */
-    private String description;
+    void setInclusions(Set<Feature> inclusions);
 
     /**
-     * 包含的同类特性
+     * get 互斥特性
+     *
+     * @return
      */
-    private Set<Feature> inclusions;
+    Set<Feature> getRepulsions();
 
     /**
-     * 互斥的同类特性
+     * set 互斥特性
+     *
+     * @param repulsions
      */
-    private Set<Feature> repulsions;
+    void setRepulsions(Set<Feature> repulsions);
 
     /**
-     * 特性
+     * get 类别
+     *
+     * @return division
      */
-    private Category item;
+    Integer getDivision();
 
     /**
-     * 特性项
+     * set 类别
+     *
+     * @param division
      */
-    private Integer number;
+    void setDivision(Integer division);
 
     /**
-     * 特性名
+     * get code number
+     *
+     * @return code number
      */
-    private String name;
+    Integer getCode();
 
-    public Integer getDivision() {
-        return division;
-    }
+    /**
+     * set code number
+     *
+     * @param code
+     */
+    void setCode(Integer code);
 
-    public void setDivision(Integer division) {
-        this.division = division;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Set<Feature> getInclusions() {
-        return inclusions;
-    }
-
-    public void setInclusions(Set<Feature> inclusions) {
-        this.inclusions = inclusions;
-    }
-
-    public Set<Feature> getRepulsions() {
-        return repulsions;
-    }
-
-    public void setRepulsions(Set<Feature> repulsions) {
-        this.repulsions = repulsions;
-    }
-
-    public Category getItem() {
-        return item;
-    }
-
-    public void setItem(Category item) {
-        this.item = item;
-    }
-
-    public Integer getNumber() {
-        return number;
-    }
-
-    public void setNumber(Integer number) {
-        this.number = number;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    /**
+     * Prototype is category or not.
+     *
+     * @return
+     */
+    Boolean isCategoryItem();
 }

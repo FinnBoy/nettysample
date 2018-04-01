@@ -12,8 +12,14 @@ public class Strategy {
      */
     private Boolean intimate;
 
+    /**
+     * 生产方
+     */
     private Feature producer;
 
+    /**
+     * 消耗方
+     */
     private Feature consumer;
 
     /**

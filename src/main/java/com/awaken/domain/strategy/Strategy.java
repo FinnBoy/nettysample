@@ -5,6 +5,9 @@ package com.awaken.domain.strategy;
  */
 public class Strategy {
 
+    /**
+     * 策略用途分类
+     */
     private Integer purpose;
 
     /**

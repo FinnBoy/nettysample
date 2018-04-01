@@ -1,6 +1,7 @@
 package com.awaken.domain.strategy;
 
 public enum Classification {
+
     /**
      * 类别
      */

@@ -4,6 +4,7 @@ package com.awaken.domain.strategy;
  * 划分
  */
 public enum Division {
+
     /**
      * 产品
      */

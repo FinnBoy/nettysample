@@ -7,29 +7,43 @@ public enum Division {
     /**
      * 产品
      */
-    PRODUCT,
+    PRODUCT(31),
     /**
      * 仓库
      */
-    WAREHOUSE,
+    WAREHOUSE(32),
     /**
      * 单据
      */
-    DOCUMENT,
+    DOCUMENT(33),
     /**
      * 账户
      */
-    ACCOUNT,
+    ACCOUNT(34),
     /**
      * 组织关系
      */
-    COMMUNITY,
+    COMMUNITY(35),
     /**
      * 货物
      */
-    CARGO,
+    CARGO(36),
     /**
      * 其他
      */
-    OTHERS;
+    OTHERS(37);
+
+    private Integer value;
+
+    private Division(Integer value) {
+        this.value = value;
+    }
+
+    public Integer num() {
+        return this.value;
+    }
+
+    public boolean judge(Integer value) {
+        return value == null ? false : this.value.intValue() == value.intValue();
+    }
 }

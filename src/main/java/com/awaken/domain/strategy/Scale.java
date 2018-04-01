@@ -7,21 +7,35 @@ public enum Scale {
     /**
      * 一级
      */
-    PRIMARY,
+    PRIMARY(101),
     /**
      * 二级
      */
-    SECONDARY,
+    SECONDARY(102),
     /**
      * 三级
      */
-    TERTIARY,
+    TERTIARY(103),
     /**
      * 四级
      */
-    QUATERNARY,
+    QUATERNARY(104),
     /**
      * 精细
      */
-    ELABORATE;
+    ELABORATE(105);
+
+    private Integer value;
+
+    private Scale(Integer value) {
+        this.value = value;
+    }
+
+    public Integer num() {
+        return this.value;
+    }
+
+    public boolean judge(Integer value) {
+        return value == null ? false : this.value.intValue() == value.intValue();
+    }
 }

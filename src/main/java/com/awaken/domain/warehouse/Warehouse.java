@@ -26,6 +26,11 @@ public class Warehouse {
     private Set<Shelf> shelves;
 
     /**
+     * 作业平台
+     */
+    private Set<Platform> platforms;
+
+    /**
      * 库房
      */
     private Set<Storeroom> storerooms;
@@ -52,6 +57,14 @@ public class Warehouse {
 
     public void setShelves(Set<Shelf> shelves) {
         this.shelves = shelves;
+    }
+
+    public Set<Platform> getPlatforms() {
+        return platforms;
+    }
+
+    public void setPlatforms(Set<Platform> platforms) {
+        this.platforms = platforms;
     }
 
     public Set<Storeroom> getStorerooms() {

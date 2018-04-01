@@ -4,7 +4,6 @@ package com.awaken.domain.strategy;
  * 规模等级
  */
 public enum Scale {
-
     /**
      * 一级
      */
